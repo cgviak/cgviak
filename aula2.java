@@ -25,9 +25,13 @@ public class Main
         System.out.print("Sua idade: ");
         System.out.println(2022-n1);
         
-        int n4 =(2022-n1);
-        System.out.print("sua idade em meses: ");
-        System.out.print(n4*12);
+        int n4 =(2022-n1); //tarefa 7
+        System.out.print("Sua idade em meses: ");
+        System.out.println(n4*12);
+        
+        int n5 = (n4*12*30);
+        System.out.print("Sua idade em dias: ");
+        System.out.println (n5-n3);
         
   }
 }
