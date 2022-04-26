@@ -8,22 +8,19 @@ public class Main
     Scanner sc = new Scanner (System.in); //porta para usuário ceder dados
     
         int n1 = 0;
-        System.out.println("Em que ano você nasceu?");
+        System.out.print("Em que ano você nasceu? ");
         n1 = sc.nextInt(); //deixo vazio para usuário colocar
-        
-        System.out.println("Ano de nascimento:"+" "+ n1);
+
         
         int n2= 0;
-        System.out.print("Qual o mês? Em Número:");
+        System.out.print("Qual o mês? Em Número: "); //interessante add condicional, caso seja maior que 12 não aceitar
         n2 = sc.nextInt();
-  
-        System.out.println("Mês de Nascimento: "+ n2);
+ 
         int n3= 0;
-        System.out.print("Qual o dia? ");
+        System.out.print("Qual o dia? "); //maior que 31 não aceitar
         n3 = sc.nextInt();
-  
-        System.out.println("Dia: "+n3);
-        
+
+        System.out.print("Sua data de nascimento é: ");
         System.out.println(n3+"/"+n2+"/"+n1);
     
   }
