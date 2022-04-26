@@ -10,7 +10,6 @@ public class Main
         int n1=0; //nova varíavel = 0
         System.out.print("Em que ano você nasceu? ");
         n1 = sc.nextInt(); //deixo vazio para usuário colocar, define novo valor da variável
-
         
         int n2= 0;
         System.out.print("Qual o mês? Em Número: "); //interessante add condicional, caso seja maior que 12 não aceitar
@@ -24,7 +23,12 @@ public class Main
         System.out.println(n3+"/"+n2+"/"+n1);
         
         System.out.print("Sua idade: ");
-        System.out.print(2022-n1); //add condicional, if = núm negativo, 
+        System.out.println(2022-n1);
+        
+        int n4 =(2022-n1);
+        System.out.print("sua idade em meses: ");
+        System.out.print(n4*12);
+        
   }
 }
 
