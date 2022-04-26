@@ -1,0 +1,32 @@
+//25 de abril, 2022; aula2
+
+    import java.util.Scanner;
+    
+public class Main
+{
+  public static void main (String[]args){
+    Scanner sc = new Scanner (System.in); //porta para usuário ceder dados
+    
+        int n1 = 0;
+        System.out.println("Em que ano você nasceu?");
+        n1 = sc.nextInt(); //deixo vazio para usuário colocar
+        
+        System.out.println("Ano de nascimento:"+" "+ n1);
+        
+        int n2= 0;
+        System.out.print("Qual o mês? Em Número:");
+        n2 = sc.nextInt();
+  
+        System.out.println("Mês de Nascimento: "+ n2);
+        int n3= 0;
+        System.out.print("Qual o dia? ");
+        n3 = sc.nextInt();
+  
+        System.out.println("Dia: "+n3);
+        
+        System.out.println(n3+"/"+n2+"/"+n1);
+    
+  }
+}
+
+//atividades : aprender System.out.print e somar 2 números
