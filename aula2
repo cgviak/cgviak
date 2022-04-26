@@ -7,9 +7,9 @@ public class Main
   public static void main (String[]args){
     Scanner sc = new Scanner (System.in); //porta para usuário ceder dados
     
-        int n1=0;
+        int n1=0; //nova varíavel = 0
         System.out.print("Em que ano você nasceu? ");
-        n1 = sc.nextInt(); //deixo vazio para usuário colocar
+        n1 = sc.nextInt(); //deixo vazio para usuário colocar, define novo valor da variável
 
         
         int n2= 0;
@@ -25,7 +25,6 @@ public class Main
         
         System.out.print("Sua idade: ");
         System.out.print(2022-n1); //add condicional, if = núm negativo, 
-    
   }
 }
 
