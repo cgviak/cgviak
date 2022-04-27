@@ -8,13 +8,10 @@ public class Main {
         System.out.println ("Defina o salário mensal do funcionário: ");
         x = sc.nextInt ();
         
-        System.out.println ("Defina o reajuste previsto (porcentagem): ");
+        System.out.println ("Defina o Novo Salário: ");
         y = sc.nextInt ();
-        
-        int z = y/100;
-        int a = z*x;
-        int b = a+x;
-        
-        System.out.println ("Novo salario: " + b);
+
+        //valor obtido x 100 / Valor total
+        System.out.println ("Reajuste Percentual: " + (((y*100)/x)-100));
     }
 }
