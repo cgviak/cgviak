@@ -21,6 +21,6 @@ public class Main {
      
       System.out.println ("porcentagem de votos em branco: " + n4 + "%");
       System.out.println ("porcentagem de votos nulos: " + n6 + "%");
-      System.out.println ("porcentagem de votos válidos: " + ((((n1-n2)-n3)*100)/n1) + "%");
+      System.out.println ("porcentagem de votos válidos: " + (((n1-n2-n3)*100)/n1) + "%");
     }
 }
