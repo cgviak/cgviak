@@ -1,19 +1,13 @@
-//tarefa 10
+//tarefa 12
 import java.util.Scanner;
 public class Main {
     public static void main(String args[]) {
         Scanner sc = new Scanner (System.in);
-        int x = 0; //valor do carro
+        float c = 0; //celsius
         
-        System.out.println ("Qual é o preço de fábrica do carro?");
-        x= sc.nextInt ();
+        System.out.println ("Qual a temperatura em Celsius? ");
+        c = sc.nextInt();
         
-        double y = x* 0.28; //percentual do distribuidor
-        System.out.println ("percentual do distribuidor: " + y);
-        
-        double z = x*0.45; //impostos
-        System.out.println ("tributação: " + z);
-        
-        System.out.println ("Valor total do carro: " + (x+y+z));
+        System.out.println ("Em Farenheit: " +(((c*9)/5)+32));
     }
 }
