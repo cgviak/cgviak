@@ -19,11 +19,8 @@ public class Main {
     
       int n6 = n3*100/n1;
      
-      int n7 = n1-n2;
-      int n8 = n7-n3;
-      int n9 = n8/n1;
       System.out.println ("porcentagem de votos em branco: " + n4 + "%");
       System.out.println ("porcentagem de votos nulos: " + n6 + "%");
-      System.out.println ("porcentagem de votos válidos: " + n9 + "%");
+      System.out.println ("porcentagem de votos válidos: " + ((((n1-n2)-n3)*100)/n1) + "%");
     }
 }
