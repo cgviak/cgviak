@@ -9,6 +9,6 @@ public class Main {
         c = sc.nextInt();
         
         System.out.println ("Em Farenheit: " +(((c*9)/5)+32));
-        System.out.println ("Em Kelvin: " + (c+273));
+        System.out.println ("Em Kelvin: " + (c+273.15));
     }
 }
