@@ -1,6 +1,6 @@
 package aulasSenac;
 import java.util.Scanner;
-public class Tarefa19 {
+public class Tarefa20 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
@@ -12,14 +12,11 @@ public class Tarefa19 {
 		
 		System.out.println ("Digite outro número: ");
 		b = sc.nextInt ();
-		
+		System.out.print("Em ordem crescente: ");
 		if (b>a) {
-			System.out.println ("O maior número é: "+ b);
+			System.out.println (b+", "+a);
 		} else {
-			System.out.println ("O maior número é: "+ a);
+			System.out.println (a+", "+b);
 		}
-
-
 	}
-
 }
