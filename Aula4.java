@@ -1,22 +1,19 @@
-//29/04/2022 aula sobre condicionais
-//tarefa 14
 package aulasSenac;
-
 import java.util.Scanner;
+public class Tarefa15 {
 
-public class Aula4 {
-
-	public static void main(String [] args) {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
 		
 		double x = 0;
-		System.out.println ("Digite um número: ");
+		System.out.println ("escreva um valor: ");
 		x = sc.nextDouble ();
-		
-		if (x>10) {
-			System.out.println ("É Maior do que 10!");
+		if (x >= 0) {
+			System.out.println ("número é positivo!");
 		} else {
-			System.out.println ("Não é maior que 10!");
+			System.out.println ("número é negativo!");
+		}
+
 	}
-	}
+
 }
