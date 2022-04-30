@@ -1,21 +1,23 @@
 package aulasSenac;
 import java.util.Scanner;
-public class Tarefa21 {
+public class Tarefa22 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
-		int a = 0;
-		int b = 0;
-		System.out.println ("horário de início: ");
-		a = sc.nextInt ();
+		double a = 0;
+		double b = 0;
 		
-		System.out.println ("horário de conclusão: ");
-		b = sc.nextInt ();
+		System.out.print("informe as horas trabalhadas: ");
+		a = sc.nextDouble();
 		
-		System.out.println ("tempo de jogo: "+(b-a)+" horas");
+		System.out.print("informe o salário por hora ");
+		b= sc.nextDouble ();
 		
-		if ((b-a)>24) {
-			System.out.println ("jogo durou mais que o tempo máximo!");
+		if (a>40) {
+			System.out.println("Trabalhador ganhará adicional de 50%");
+			System.out.println ("Salário: R$"+((a*b*0.5)+(a*b)));
+		}else {
+			System.out.println ("Salário: R$"+ (a*b));
 		}
 	}
 }
