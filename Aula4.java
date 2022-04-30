@@ -1,23 +1,41 @@
 package aulasSenac;
-import java.util.Scanner;
-public class Tarefa22 {
-
-	public static void main(String[] args) {
+import java.util.*;
+public class Tarefa23 {
+	public static void main(String []args) {
 		Scanner sc = new Scanner (System.in);
-		double a = 0;
-		double b = 0;
+		int idade = 0;
+		double peso = 0;
+		double altura = 0;
+		int sexo;
 		
-		System.out.print("informe as horas trabalhadas: ");
-		a = sc.nextDouble();
+		System.out.println ("Digite sua idade: ");
+		idade = sc.nextInt ();
 		
-		System.out.print("informe o salário por hora ");
-		b= sc.nextDouble ();
+		System.out.println ("Digite seu peso: ");
+		peso = sc.nextDouble ();
 		
-		if (a>40) {
-			System.out.println("Trabalhador ganhará adicional de 50%");
-			System.out.println ("Salário: R$"+((a*b*0.5)+(a*b)));
-		}else {
-			System.out.println ("Salário: R$"+ (a*b));
+		System.out.println ("Digite sua altura: ");
+		altura = sc.nextDouble ();
+		
+		System.out.println ("Digite seu sexo: ");
+		sexo = sc.nextInt();
+		
+		double idealm = ((72.2*altura)-58);
+		double idealf = ((62.1*altura)-44.7);
+		if (sexo == 1) {
+			System.out.println ("seu peso ideal é: "+ idealm);
+			if (peso>idealm) {
+			System.out.print ("você precisa perder:"+(idealm-peso)+"kg");
+			} else {
+				System.out.print("você precisa ganhar: "+ (peso-idealm)+"kg");
+			}
+		} else {
+				System.out.println ("seu peso ideal é: "+ idealf);
+				if (peso>idealm) {
+				System.out.print ("você precisa perder:"+(idealf-peso)+"kg");
+				} else {
+					System.out.print("você precisa ganhar: "+ (peso-idealf)+"kg");
 		}
 	}
+}
 }
