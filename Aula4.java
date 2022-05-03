@@ -1,26 +1,35 @@
 package aulasSenac;
 import java.util.*;
-public class Tarefa34 {
+public class Tarefa35 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
-		double x;
-		double y;
+		double l; //litros
+		double a; // Gasolina ou Álcool (1 ou 0)
 		
-		System.out.println ("Digite o primeiro número: ");
-		x = sc.nextDouble ();
-		System.out.println ("Digite o segundo número: ");
-		y = sc.nextDouble ();
+		System.out.println ("Digite o combustível: (1 ou 0) ");
+		a = sc.nextDouble ();
+		System.out.println ("Digite os litros: ");
+		l = sc.nextDouble ();
 		
-		double z = ((x*y)+5);
-			if (z<= 0) {
-				System.out.println ("Resposta A.");
-			} else if (z<= 100) {
-				System.out.println("Resposta B.");
-			} else {
-				System.out.println("Resposta C.");
-			}
-		System.out.println (z);
+		if (a<1) {
+			System.out.println("Álcool.");
+		} else if (l<=20) {
+			System.out.println ("Desconto de 3% por litro.");
+			System.out.print ("R$"+(l*2.813));
+		} else {
+			System.out.println ("Desconto de 5% por litro.");
+			System.out.print("R$"+(l*2.755));
+		} 
+		if (a>=1) {
+			System.out.println ("Gasolina.");
+		} else if (l<=20) {
+			System.out.println ("Desconto de 4% por litro.");
+			System.out.print ("R$"+(l*3.168));
+		} else {
+			System.out.println ("Desconto de 6% por litro.");
+			System.out.print("R$"+(l*3.102));
+		}
 	}
 
 }
