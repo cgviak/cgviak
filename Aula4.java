@@ -1,22 +1,26 @@
-//29/04/2022 aula sobre condicionais
-//tarefa 14
 package aulasSenac;
+import java.util.*;
+public class Tarefa34 {
 
-import java.util.Scanner;
-
-public class Aula4 {
-
-	public static void main(String [] args) {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
+		double x;
+		double y;
 		
-		double x = 0;
-		System.out.println ("Digite um número: ");
+		System.out.println ("Digite o primeiro número: ");
 		x = sc.nextDouble ();
+		System.out.println ("Digite o segundo número: ");
+		y = sc.nextDouble ();
 		
-		if (x>10) {
-			System.out.println ("É Maior do que 10!");
-		} else {
-			System.out.println ("Não é maior que 10!");
+		double z = ((x*y)+5);
+			if (z<= 0) {
+				System.out.println ("Resposta A.");
+			} else if (z<= 100) {
+				System.out.println("Resposta B.");
+			} else {
+				System.out.println("Resposta C.");
+			}
+		System.out.println (z);
 	}
-	}
+
 }
