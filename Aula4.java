@@ -1,25 +1,33 @@
 package aulasSenac;
 import java.util.*;
-public class Tarefa40 {
+public class Tarefa41 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
-		int q; // Quant. Adquirida
-		double p; //preço
-		
-		System.out.println ("Nome do Produto.");
-		System.out.println ("Digite a Quantidade Adquirida: ");
-		q = sc.nextInt ();
-		System.out.println ("Digite o Preço: ");
-		p = sc.nextDouble ();
-		
-		if (q<=5) {
-			System.out.print (q*(p*0.98));
-		}else if (q>5 && q <=10) {
-			System.out.print ((q*(p*0.97)));
-		} else {
-			System.out.print((q*(p*0.95)));
-		}
+			double n1;
+			double n2;
+			double n3;
+			double n5;
+			
+			System.out.println ("Digite a nota 1: ");
+			n1 = sc.nextDouble ();
+			System.out.println ("Digite a nota 2: ");
+			n2 = sc.nextDouble ();
+			System.out.println ("Digite a nota 3: ");
+			n3 = sc.nextDouble ();
+			System.out.println ("Digite a Média dos Exercícios: ");
+			n5 = sc.nextDouble ();
+			
+			double n4 = ((n1+(n2*2)+(n3*3)+n5)/7);
+			if (n4 >= 9) {
+				System.out.print("Conceito A.");
+			} else if (n4>=7.5 && n4 < 9) {
+				System.out.print("Conceito B.");
+			} else if (n4>=6 && n4 < 7.5) {
+				System.out.print("Conceito C.");
+			} else {
+				System.out.print("Conceito D.");
+			}
 	}
 
 }
