@@ -29,7 +29,6 @@ public class Tarefa35 {
 		} else {
 			System.out.println ("Desconto de 6% por litro.");
 			System.out.print("R$"+(l*3.102));
-		}
 	}
-
+	}
 }
