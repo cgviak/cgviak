@@ -1,34 +1,39 @@
 package aulasSenac;
 import java.util.*;
-public class Tarefa35 {
+public class Tarefa36 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner (System.in);
-		double l; //litros
-		double a; // Gasolina ou Álcool (1 ou 0)
+		int a; //h1
+		int b; //h2
+		int c; //m1
+		int d; //m2
 		
-		System.out.println ("Digite o combustível: (1 ou 0) ");
-		a = sc.nextDouble ();
-		System.out.println ("Digite os litros: ");
-		l = sc.nextDouble ();
+		System.out.println ("Idade Homem 1: ");
+		a = sc.nextInt ();
+		System.out.println ("Idade Homem 2: ");
+		b = sc.nextInt ();
+		System.out.println ("Idade Mulher 1: ");
+		c = sc.nextInt ();
+		System.out.println ("Idade Mulher 2: ");
+		d = sc.nextInt ();
 		
-		if (a<1) {
-			System.out.println("Álcool.");
-		} else if (l<=20) {
-			System.out.println ("Desconto de 3% por litro.");
-			System.out.print ("R$"+(l*2.813));
-		} else {
-			System.out.println ("Desconto de 5% por litro.");
-			System.out.print("R$"+(l*2.755));
-		} 
-		if (a>=1) {
-			System.out.println ("Gasolina.");
-		} else if (l<=20) {
-			System.out.println ("Desconto de 4% por litro.");
-			System.out.print ("R$"+(l*3.168));
-		} else {
-			System.out.println ("Desconto de 6% por litro.");
-			System.out.print("R$"+(l*3.102));
+		if (a>b) {
+			} else if ((a>b) && (c>d)) {
+				System.out.print (a+d);
+				System.out.println (b*c);
+			} else if ((a>b)&& (d>c)){
+				System.out.print (a+c);
+				System.out.println (b*d);
+			} else if ((a<b) && (c>d)) {
+				System.out.println (b+d);
+				System.out.println (a*c);
+			} else if ((a<b)&& (c<d)) {
+				System.out.println (b+c);
+				System.out.println (a*d);
+			}
+			
+	
+
 	}
 	}
-}
