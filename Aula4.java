@@ -18,8 +18,7 @@ public class Tarefa36 {
 		System.out.println ("Idade Mulher 2: ");
 		d = sc.nextInt ();
 		
-		if (a>b) {
-			} else if ((a>b) && (c>d)) {
+	if ((a>b) && (c>d)) {
 				System.out.print (a+d);
 				System.out.println (b*c);
 			} else if ((a>b)&& (d>c)){
@@ -31,9 +30,6 @@ public class Tarefa36 {
 			} else if ((a<b)&& (c<d)) {
 				System.out.println (b+c);
 				System.out.println (a*d);
-			}
-			
-	
-
+			}		
 	}
 	}
