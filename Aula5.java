@@ -103,7 +103,6 @@ public class Switch2 {
 			break;
 		default:
 			System.out.print("valor inválido.");
-			
 		}
 		}
-	}
+}
